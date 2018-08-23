@@ -231,6 +231,7 @@ class SearchMedicineController: UIViewController, BarcodeDelegate, UITableViewDe
         self.overlayBlurredBackgroundView()
     }
     
+    
     @IBAction func toggleQA(_ sender: Any) {
         if vQA==0{
             btnQA.setImage(image2, for: .normal)
