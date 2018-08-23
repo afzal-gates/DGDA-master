@@ -246,10 +246,10 @@ class SearchMedicineController: UIViewController, BarcodeDelegate, UITableViewDe
         if segue.identifier == "showCellDtl_V" {
             
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                let object = names[indexPath.row] as! NSString
-                let type = mtype[indexPath.row] as! NSString
+                let object = names[indexPath.row] as NSString
+                let type = mtype[indexPath.row] as NSString
                 let mcompany = manufacturer[indexPath.row] as! NSString
-                let ogeneric = mGeneric[indexPath.row] as! NSString
+                let ogeneric = mGeneric[indexPath.row] as NSString
                 
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 controller.detailItem = object
